@@ -1,14 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+class App extends Component {
 
-      </header>
-    </div>
-  );
+  render() {
+    return (
+      <div>
+         <BrowserRouter>
+         <Navbar />
+          <Switch>
+            <Route exact path='/' component={Home}/>
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default (App);
