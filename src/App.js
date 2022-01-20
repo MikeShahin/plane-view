@@ -1,3 +1,6 @@
+import React, { Component } from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import { connect } from 'react-redux'
 import './App.css';
 
 class App extends Component {
@@ -6,9 +9,8 @@ class App extends Component {
     return (
       <div>
          <BrowserRouter>
-         <Navbar />
           <Switch>
-            <Route exact path='/' component={Home}/>
+            {/* <Route exact path='/' component={}/> */}
           </Switch>
         </BrowserRouter>
       </div>
