@@ -13,7 +13,7 @@ class App extends Component {
         <Home />
          <BrowserRouter>
           <Switch>
-            <Route exact path='/' component={Home}/>
+            {/* <Route exact path='/' component={Home}/> */}
             <Route exact path='/newtrip' component={AddTrip}/>
           </Switch>
         </BrowserRouter>

@@ -2,6 +2,11 @@ import React from 'react';
 
 class Home extends React.Component {
 
+  handleClick = (e) => {
+    console.log("clicked")
+  }
+  
+
   render() {
     return (
       <div className="home center">
@@ -12,7 +17,7 @@ class Home extends React.Component {
               view trips
             </button>
             
-            <button placeholder="submit" type="submit">
+            <button placeholder="submit" type="submit" onClick={event =>  window.location.href='/newtrip'}>
               add trip
             </button>
       </div>
