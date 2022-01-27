@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 // import { connect } from 'react-redux'
 import Home from './components/Home';
-import AddTrip from './containers/AddTrip'
+import NewTrip from './containers/NewTrip'
 import './App.css';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
          <BrowserRouter>
           <Switch>
             {/* <Route exact path='/' component={Home}/> */}
-            <Route exact path='/newtrip' component={AddTrip}/>
+            <Route exact path='/newtrip' component={NewTrip}/>
           </Switch>
         </BrowserRouter>
       </div>
