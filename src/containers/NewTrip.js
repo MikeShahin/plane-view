@@ -15,8 +15,8 @@ handleChange = (e) => {
 
 handleSubmit = (e) => {
     e.preventDefault()
-    let newTrip = {
-
+    let tripInfo = {
+      route: this.props.route
     }
     this.props.newTrip(tripInfo)
     this.props.history.push('/')
@@ -24,7 +24,7 @@ handleSubmit = (e) => {
 
 render() {
     const {
-
+      route
     } = this.state
 
     return (
