@@ -16,7 +16,8 @@ handleChange = (e) => {
 handleSubmit = (e) => {
     e.preventDefault()
     let tripInfo = {
-      route: this.props.route
+      route: this.state.route,
+      date: this.state.date
     }
     this.props.newTrip(tripInfo)
     this.props.history.push('/')
@@ -24,7 +25,8 @@ handleSubmit = (e) => {
 
 render() {
     const {
-      route
+      route,
+      date
     } = this.state
 
     return (
@@ -38,6 +40,15 @@ render() {
                     value={route}
                     onChange={this.handleChange}
                 />
+                <br></br>
+                <br></br>
+                <input
+                    placeholder="trip date"
+                    type="date"
+                    name="date"
+                    value={date}
+                    onChange={this.handleChange}
+                    /> 
                 <br></br>
                 <br></br>
               
