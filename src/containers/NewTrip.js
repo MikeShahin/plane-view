@@ -17,7 +17,8 @@ handleSubmit = (e) => {
     e.preventDefault()
     let tripInfo = {
       route: this.state.route,
-      date: this.state.date
+      date: this.state.date,
+      time: this.state.time
     }
     this.props.newTrip(tripInfo)
     this.props.history.push('/')
@@ -26,7 +27,8 @@ handleSubmit = (e) => {
 render() {
     const {
       route,
-      date
+      date,
+      time
     } = this.state
 
     return (
@@ -48,7 +50,14 @@ render() {
                     name="date"
                     value={date}
                     onChange={this.handleChange}
-                    /> 
+                  /> 
+                  <input
+                    placeholder="Trip time"
+                    type="time"
+                    name="time"
+                    value={time}
+                    onChange={this.handleChange}
+                  />
                 <br></br>
                 <br></br>
               
