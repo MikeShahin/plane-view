@@ -18,7 +18,8 @@ handleSubmit = (e) => {
     let tripInfo = {
       route: this.state.route,
       date: this.state.date,
-      time: this.state.time
+      time: this.state.time,
+      comments: this.state.comments
     }
     this.props.newTrip(tripInfo)
     this.props.history.push('/')
@@ -28,7 +29,8 @@ render() {
     const {
       route,
       date,
-      time
+      time,
+      comments
     } = this.state
 
     return (
@@ -60,6 +62,13 @@ render() {
                   />
                 <br></br>
                 <br></br>
+                <textarea
+                    placeholder="comments"
+                    type="textarea"
+                    name="comments"
+                    value={comments}
+                    onChange={this.handleChange}
+                />
               
                 <button placeholder="submit" type="submit">Log Dive</button>                   
             </form>
