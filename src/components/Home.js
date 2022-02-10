@@ -13,7 +13,7 @@ class Home extends React.Component {
             <h1>Welcome to Plane View, The site that lets you figure out the best view for your next trip!</h1>
             <p>Construction in progress</p>
 
-            <button placeholder="submit" type="submit">
+            <button placeholder="submit" type="submit" onClick={event =>  window.location.href='/viewtrips'}>
               view trips
             </button>
             
