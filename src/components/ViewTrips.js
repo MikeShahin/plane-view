@@ -1,6 +1,10 @@
 import React from 'react';
 
 class ViewTrips extends React.Component {
+
+  handleClick = (e) => {
+    console.log("clicked")
+  }
   
 
   render() {
