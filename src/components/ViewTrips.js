@@ -10,7 +10,8 @@ class ViewTrips extends React.Component {
   render() {
     return (
       <div className="trips center">
-
+            <h1>This page is for all the trips logged</h1>
+            <p>Construction in progress</p>
       </div>
     )
   }
