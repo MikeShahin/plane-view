@@ -1,6 +1,12 @@
 import React from 'react';
+import React, { Component } from 'react'
+import { connect } from 'react-redux';
 
 class ViewTrips extends React.Component {
+
+  componentDidMount() {
+    this.props.fetchTrips()
+}
 
   handleClick = (e) => {
     console.log("clicked")
