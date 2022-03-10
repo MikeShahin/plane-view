@@ -10,9 +10,10 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
+import { tripsReducer } from './reducers/tripsReducer';
 
 const rootReducer = combineReducers({
-
+  trips: tripsReducer
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
