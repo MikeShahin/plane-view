@@ -70,7 +70,7 @@ render() {
                     onChange={this.handleChange}
                 />
               
-                <button placeholder="submit" type="submit">Log Dive</button>                   
+                <button placeholder="submit" type="submit">Add Trip</button>                   
             </form>
         </div>
     )
