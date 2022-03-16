@@ -16,7 +16,13 @@ class AllTrips extends Component {
     render() {
         return (
             <div className="trips">
+                <h2>All Users Trips!</h2>
 
+                { this.props.trips ? 
+                <> {this.loggedTrips()}</>
+                :
+                <h2>Something went wrong, please try again.</h2>
+                }
             </div>
         )
     }
