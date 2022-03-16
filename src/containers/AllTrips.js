@@ -23,5 +23,10 @@ class AllTrips extends Component {
     
 }
 
+const mapStateToProps = state => {
+    return {
+        trips: state.trips.data
+    }
+}
 
 export default connect(mapStateToProps, {fetchTrips})(AllTrips)
