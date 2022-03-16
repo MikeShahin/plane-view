@@ -5,6 +5,14 @@ import { fetchTrips } from '../actions/trips';
 
 class AllTrips extends Component {
 
+    componentDidMount() {
+        this.props.fetchTrips()
+    }
+
+    loggedTrips = () => {
+        return this.props.trips.map(trip => <TripsCard key={trip.id} {...trip} />)
+    }
+
     render() {
         return (
             <div className="trips">
