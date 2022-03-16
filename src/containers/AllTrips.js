@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-
+import { connect } from 'react-redux';
+import TripsCard from '../components/TripsCard'
+import { fetchTrips } from '../actions/trips';
 
 class AllTrips extends Component {
 
@@ -13,6 +15,5 @@ class AllTrips extends Component {
     
 }
 
-}
 
-export default AllTrips
+export default connect(mapStateToProps, {fetchTrips})(AllTrips)
