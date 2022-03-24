@@ -41,6 +41,15 @@ render() {
             <form onSubmit={this.handleSubmit}>
             <h2>Tell us about your trip!</h2>
                 <input
+                    placeholder="User"
+                    type="text"
+                    name="user"
+                    value={user}
+                    onChange={this.handleChange}
+                />
+                <br></br>
+                <br></br>
+                <input
                     placeholder="Route"
                     type="text"
                     name="route"
@@ -63,6 +72,24 @@ render() {
                     value={time}
                     onChange={this.handleChange}
                   />
+                <br></br>
+                <br></br>
+                <input
+                  placeholder="Side"
+                  type="text"
+                  name="side"
+                  value={side}
+                  onChange={this.handleChange}
+                />
+                <br></br>
+                <br></br>
+                <input
+                  placeholder="Picture"
+                  type="text"
+                  name="picture"
+                  value={pictures}
+                  onChange={this.handleChange}
+                />
                 <br></br>
                 <br></br>
                 <textarea
