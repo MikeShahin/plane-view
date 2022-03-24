@@ -1,5 +1,4 @@
 import React from 'react';
-import { Redirect } from "react-router";
 
 class NewTrip extends React.Component {
   state = {
