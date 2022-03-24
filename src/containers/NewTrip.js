@@ -27,9 +27,12 @@ handleSubmit = (e) => {
 
 render() {
     const {
+      user,
       route,
       date,
       time,
+      side,
+      pictures,
       comments
     } = this.state
 
