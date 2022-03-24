@@ -16,9 +16,12 @@ handleChange = (e) => {
 handleSubmit = (e) => {
     e.preventDefault()
     let tripInfo = {
+      user: this.state.user,
       route: this.state.route,
       date: this.state.date,
       time: this.state.time,
+      side: this.state.side,
+      pictures: this.state.pictures,
       comments: this.state.comments
     }
     this.props.newTrip(tripInfo)
