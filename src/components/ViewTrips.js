@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
+import TripsCard from './TripsCard';
+import { fetchTrips } from '../actions/trips'
 
 class ViewTrips extends React.Component {
 
-//   componentDidMount() {
-//     this.props.fetchTrips()
-// }
+  componentDidMount() {
+    this.props.fetchTrips()
+}
 
-  handleClick = (e) => {
-    console.log("clicked")
-  }
+loggedTrips = () => {
+  return this.props.trips.map(trip => <TripsCard key={trip.id} {...trip} />)
+}
   
 
   render() {
