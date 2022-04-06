@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import TripsCard from './TripsCard';
 import { fetchTrips } from '../actions/trips'
 
-class ViewTrips extends React.Component {
+class ViewTrips extends Component {
 
   componentDidMount() {
     this.props.fetchTrips()

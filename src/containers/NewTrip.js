@@ -2,7 +2,13 @@ import React from 'react';
 
 class NewTrip extends React.Component {
   state = {
-
+    user: '',
+    route: '',
+    date: '',
+    time: '',
+    side: '',
+    pictures: '',
+    comments: ''
 }
 
 handleChange = (e) => {
