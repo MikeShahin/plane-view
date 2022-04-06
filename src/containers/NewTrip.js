@@ -1,6 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux'
+import { addTrip } from '../actions/trips'
 
 class NewTrip extends React.Component {
+
   state = {
     user: '',
     route: '',
@@ -112,7 +115,7 @@ render() {
             </form>
         </div>
     )
-}
+  }
 }
 
-export default NewTrip; 
+export default connect(null, { addTrip })(NewTrip); 
