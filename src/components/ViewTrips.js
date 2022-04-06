@@ -26,5 +26,10 @@ loggedTrips = () => {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+      trips: state.trips.data
+  }
+}
 
-export default (ViewTrips); 
+export default connect(mapStateToProps, {fetchTrips})(ViewTrips); 
