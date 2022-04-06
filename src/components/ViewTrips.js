@@ -19,6 +19,8 @@ loggedTrips = () => {
       <div className="trips center">
             <h1>This page is for all the trips logged</h1>
             <p>Construction in progress</p>
+
+            <> {this.loggedTrips()} </>
       </div>
     )
   }
